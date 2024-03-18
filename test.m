@@ -22,7 +22,7 @@ Sg_lat = objects{1,7}{1,2};
 Sg_lon = objects{1,7}{1,3};
 
 testObject(Sg_lat, Sg_lon, 0.1, 0);
-
+testObject(Sg_lat, Sg_lon, 0.1, 1);
 
 %% Test with Coney Island object
 Coney_lat = objects{1,9}{1,2};

@@ -72,6 +72,8 @@ public:
       CGAL::y_monotone_partition_2(polygon.vertices_begin(), polygon.vertices_end(), std::back_inserter(partition_polys));
     default:
       std::cout << "Invalid mode" << std::endl;
+      ouputs[0] = factory.createCharArray("Invalid mode");
+      return;
   }
     
   if (partition_polys.empty())
